@@ -31,7 +31,7 @@ make
 make DESTDIR="$1" install
 
 # Remove all unneeded files.
-find "$1" -name \*.pod       -exec rm -f {} +
+find "$1" -name perllocal.pod -exec rm -f {} +
 find "$1" -name .packlist    -exec rm -f {} +
 find "$1" -name README\*     -exec rm -f {} +
 find "$1" -name TODO\*       -exec rm -f {} +
